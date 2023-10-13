@@ -8,13 +8,11 @@ body {
 }
 
 :root {
-  /* fonts */
   --font-hiragino-sans: "Hiragino Sans";
   --font-source-sans-pro: "Source Sans Pro";
   --font-futura: Futura;
   --font-helvetica: Helvetica;
 
-  /* font sizes */
   --font-size-lg: 18px;
   --font-size-sm: 14px;
   --font-size-5xl: 24px;
@@ -22,7 +20,6 @@ body {
   --font-size-xs: 12px;
   --font-size-21xl: 40px;
 
-  /* Colors */
   --color-white: #fff;
   --color-black: #000;
   --color-red: #ff0000;

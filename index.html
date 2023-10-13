@@ -19,10 +19,10 @@
       <!-- Navbar section -->
       <section>
         <nav class="justify-content-end shadow-sm px-5 py-2 big-nav">
-          <button class="mx-2 px-5 btn btn-sm btn-orange text-white">
+          <button class="mx-2 px-5 btn btn-sm function-btn text-white">
             Case
           </button>
-          <button class="mx-2 px-5 btn btn-sm btn-orange text-white">
+          <button class="mx-2 px-5 btn btn-sm function-btn text-white">
             Demo
           </button>
           <button class="me-5 px-5 ml-2 btn btn-sm btn-danger">Order</button>
@@ -69,7 +69,7 @@
                 class="feature-point-image"
               />
               <div>
-                <h2 class="feature-list-header">POINT 1</h2>
+                <h2 class="feature-cont-header">POINT 1</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -85,7 +85,7 @@
                 class="feature-point-image"
               />
               <div>
-                <h2 class="feature-list-header">POINT 2</h2>
+                <h2 class="feature-cont-header">POINT 2</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -101,7 +101,7 @@
                 class="feature-point-image"
               />
               <div>
-                <h2 class="feature-list-header">POINT 3</h2>
+                <h2 class="feature-cont-header">POINT 3</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -129,7 +129,7 @@
                 eiusmod tempor incididunt ut labore
               </p>
 
-              <button class="btn btn-orange btn-sm">To etail</button>
+              <button class="btn function-btn btn-sm">To etail</button>
             </div>
             <div
               class="card function-card-item bg-white py-3 px-2 border-none shadow-sm"
@@ -140,7 +140,7 @@
                 eiusmod tempor incididunt ut labore
               </p>
 
-              <button class="btn btn-orange btn-sm">To etail</button>
+              <button class="btn function-btn btn-sm">To etail</button>
             </div>
             <div
               class="card function-card-item bg-white py-3 px-2 border-none shadow-sm"
@@ -151,7 +151,7 @@
                 eiusmod tempor incididunt ut labore
               </p>
 
-              <button class="btn btn-orange btn-sm">To etail</button>
+              <button class="btn function-btn btn-sm">To etail</button>
             </div>
           </div>
         </div>
@@ -503,7 +503,7 @@
 
       <!-- flow section -->
       <section>
-        <div id="flow" class="my-5">
+        <div id="flow-section" class="my-5">
           <h2 class="mt-5 mb-4 px-5">Flow</h2>
 
           <div>
@@ -752,4 +752,33 @@
       </section>
     </main>
   </body>
+
+  <script>
+    const skilledNav = document.querySelector(".menu-btn");
+    const skilledNavOptions = document.querySelector(".skilled-nav-options");
+    skilledNavOptions.style.display = "none";
+
+    skilledNav.addEventListener("click", () => {
+      skilledNavOptions.style.display = "block";
+    });
+
+    skilledNav.addEventListener("blur", () => {
+      skilledNavOptions.style.display = "none";
+    });
+
+    const radioBtns = document.querySelectorAll(".form-input-sect");
+    const formImage = document.querySelector(".form-img");
+
+    radioBtns.forEach((button) => {
+      button.addEventListener("click", () => {
+        const allRadioInputs = document.querySelectorAll(".form-input");
+        const allFormImages = document.querySelectorAll(".form-img");
+        allRadioInputs.forEach((input) => (input.style.opacity = 1));
+        allFormImages.forEach((input) => (input.style.opacity = 0));
+
+        button.children[0].style.opacity = 0;
+        button.children[1].style.opacity = 1;
+      });
+    });
+  </script>
 </html>

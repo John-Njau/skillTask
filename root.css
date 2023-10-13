@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Hiragino Sans';
+}
+
+:root {
+  /* fonts */
+  --font-hiragino-sans: "Hiragino Sans";
+  --font-source-sans-pro: "Source Sans Pro";
+  --font-futura: Futura;
+  --font-helvetica: Helvetica;
+
+  /* font sizes */
+  --font-size-lg: 18px;
+  --font-size-sm: 14px;
+  --font-size-5xl: 24px;
+  --font-size-9xl: 28px;
+  --font-size-xs: 12px;
+  --font-size-21xl: 40px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-red: #ff0000;
+  --color-gainsboro: #d7dae2;
+  --color-gray: #1a1a1a;
+  --color-dimgray: #717171;
+  --orange: #EA7A15;
+  --tomato: #d82b1b;
+  --sky: #1FA6B2;
+  --purple: #CE286F;
+  --green: #2A8B4B;
+  --blue: #1E2369;
+}
